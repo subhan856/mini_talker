@@ -7,7 +7,7 @@ import time
 # Firebase INIT (safe check)
 # -------------------------------
 if not firebase_admin._apps:
-    cred = credentials.Certificate("serviceAccountKey (2).json")
+    cred = credentials.Certificate("serviceAccountKey.json")
 
     firebase_admin.initialize_app(cred, {
         "databaseURL": "https://mini-talker-default-rtdb.firebaseio.com/"
