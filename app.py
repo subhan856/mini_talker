@@ -10,7 +10,7 @@ if not firebase_admin._apps:
     cred = credentials.Certificate("serviceAccountKey (2).json")
 
     firebase_admin.initialize_app(cred, {
-        "databaseURL": https://mini-talker-default-rtdb.firebaseio.com/
+        "databaseURL": "https://mini-talker-default-rtdb.firebaseio.com/"
     })
 
 chat_ref = db.reference("mini_talker_messages")
